@@ -1,0 +1,15 @@
+{
+  "name": "job-autofill-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-powered Chrome extension to autofill job application forms (TypeScript).",
+  "scripts": {
+    "build": "tsc && node scripts/copy-static.js",
+    "clean": "rm -rf dist",
+    "watch": "tsc -w"
+  },
+  "devDependencies": {
+    "chrome-types": "^0.1.377",
+    "typescript": "^5.9.2"
+  }
+}
