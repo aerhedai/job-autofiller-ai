@@ -9,6 +9,7 @@
     "watch": "tsc -w"
   },
   "devDependencies": {
+    "@types/chrome": "^0.1.12",
     "chrome-types": "^0.1.377",
     "typescript": "^5.9.2"
   }
