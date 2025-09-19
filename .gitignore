@@ -1,0 +1,27 @@
+# Node dependencies (if you use npm/yarn/pnpm)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Env / secrets
+.env
+.env.local
+.env.*
+*.secret
+
+# Chrome extension package
+*.crx
+*.pem
+*.zip

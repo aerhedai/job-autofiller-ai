@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Job Autofill Settings</title>
+    <link rel="stylesheet" href="settings.css" />
+  </head>
+  <body>
+    <h2>API Settings</h2>
+    h2>AI Testing Log</h2>
+    <p>View the most recent AI requests and responses for testing.</p>
+    <button id="showLog">Show Log</button>
+    <button id="clearLog">Clear Log</button>
+    <pre id="aiLogOutput" style="background-color: #f0f0f0; border: 1px solid #ccc; padding: 10px; margin-top: 10px; max-height: 400px; overflow-y: auto; white-space: pre-wrap; word-wrap: break-word;"></pre>
+    <div>
+      <label for="apiKey">Google Gemini API Key</label>
+      <input type="password" id="apiKey" placeholder="Enter your API key here" />
+      <button id="saveApiKey">Save Key</button>
+      <span id="apiKeyStatus" style="margin-left: 10px; color: green;"></span>
+    </div>
+
+    <hr style="margin: 2rem 0;" />
+
+    <h1>Manage Profiles</h1>
+
+    <ul id="profileList"></ul>
+
+    <button id="addProfile">Add New Profile</button>
+
+    <form id="profileForm">
+      <input type="text" id="displayName" placeholder="Profile Name (e.g., 'My Tech Profile')" required />
+      <input type="text" id="firstName" placeholder="First Name" required />
+      <input type="text" id="lastName" placeholder="Last Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="phone" placeholder="Phone" />
+      <input type="text" id="country" placeholder="Country" />
+      <input type="text" id="address" placeholder="Address" />
+      <input type="text" id="nationality" placeholder="Nationality (e.g., British)" />
+      <input type="text" id="rightToWork" placeholder="Right to Work? (e.g., Yes)" />
+      <input type="text" id="rightToWorkMethod" placeholder="Method for Right to Work (e.g., British Citizen)" />
+      <input type="text" id="university" placeholder="University Name" />
+      <input type="text" id="degree" placeholder="Degree Subject (e.g., Computer Science)" />
+      <input type="text" id="securityClearance" placeholder="Agree to Security Check? (e.g., Yes)" />
+      <input type="text" id="criminalConvictions" placeholder="Unspent Criminal Convictions? (e.g., No)" />
+      <input type="text" id="livedAbroad" placeholder="Lived abroad in last 5 years? (e.g., No)" />
+      <input type="text" id="disability" placeholder="Disability Status (e.g., No)" />
+      
+      <button type="submit">Save Profile</button>
+    </form>
+
+    <script src="settings.js" type="module"></script>
+  </body>
+</html>
