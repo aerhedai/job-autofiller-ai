@@ -3,8 +3,16 @@
   "name": "Job Autofill — AI Profiles",
   "version": "0.1.0",
   "description": "Autofill job application forms using profiles and optional AI-generated long responses.",
-  "permissions": ["storage", "scripting", "activeTab", "contextMenus"],
-  "host_permissions": ["<all_urls>"],
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab",
+    "contextMenus",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "action": {
     "default_popup": "popup/popup.html",
     "default_title": "Job Autofill"
@@ -12,13 +20,7 @@
   "background": {
     "service_worker": "background/serviceWorker.js"
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content/content.js"],
-      "run_at": "document_idle"
-    }
-  ],
+  "options_page": "settings/settings.html",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",

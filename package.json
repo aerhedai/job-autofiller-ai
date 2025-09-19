@@ -4,13 +4,16 @@
   "private": true,
   "description": "AI-powered Chrome extension to autofill job application forms (TypeScript).",
   "scripts": {
-    "build": "tsc && node scripts/copy-static.js",
+    "build": "node scripts/build.js",
     "clean": "rm -rf dist",
-    "watch": "tsc -w"
+    "watch": "node scripts/build.js --watch"
   },
   "devDependencies": {
+    "@google/generative-ai": "^0.15.0",
     "@types/chrome": "^0.1.12",
     "chrome-types": "^0.1.377",
+    "esbuild": "^0.23.0",
+    "fs-extra": "^11.2.0",
     "typescript": "^5.9.2"
   }
 }
